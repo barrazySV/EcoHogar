@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | El ecosistema nuestro hogar</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carga de Lucide Icons (para íconos juveniles) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Tipografía moderna (Inter) */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #374151; /* Color de texto oscuro por defecto */
+        }
+        /* Color principal: Verde Esmeralda (#10B981) y Azul (#3B82F6) */
+        
+        /* Estilo para el botón grande con degradado dinámico */
+        .btn-primary {
+            background-image: linear-gradient(45deg, #10b981, #3b82f6);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+        }
+        .btn-primary:hover {
+            background-image: linear-gradient(45deg, #3b82f6, #10b981);
+            box-shadow: 0 8px 25px rgba(16, 185, 129, 0.6);
+            transform: translateY(-2px);
+        }
+
+        /* Estilo para el fondo de la sección principal (degradado suave) */
+        .hero-background {
+            background-color: #f0fdf4;
+            background-image: linear-gradient(180deg, #f0fdf4 0%, #dcfce7 100%);
+        }
+
+        /* Estilo para títulos grandes y llamativos */
+        h1, h2 {
+            font-weight: 800; /* Extra Bold */
+        }
+    </style>
+</head>
+<body class="bg-white pt-20">
+    <!-- Header/Menú de Navegación -->
+    <header class="bg-white/95 backdrop-blur-sm shadow-md fixed w-full z-10 top-0">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-extrabold text-emerald-600 hover:text-blue-600 transition duration-300 rounded-lg p-1">
+                El ecosistema nuestro hogar
+            </a>
+            <!-- Links de Navegación -->
+            <div class="flex space-x-6 text-lg font-medium">
+                <a href="index.html" class="text-blue-600 border-b-2 border-blue-600 pb-1 transition">Inicio</a>
+                <a href="sobre.html" class="text-gray-700 hover:text-blue-600 transition pb-1">Sobre</a>
+                <a href="comunidad.html" class="text-gray-700 hover:text-blue-600 transition pb-1">Comunidad</a>
+                <a href="contacto.html" class="text-gray-700 hover:text-blue-600 transition pb-1">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección Principal (Hero) -->
+        <section class="hero-background pt-24 pb-32 text-center flex items-center justify-center min-h-[calc(100vh-80px)]">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <!-- Frase Principal -->
+                <h1 class="text-6xl md:text-8xl text-gray-800 mb-6 leading-tight">
+                    Sé parte del <span class="text-emerald-600">movimiento</span> que cuida, protege y transforma.
+                </h1>
+                <!-- Subtítulo Corto -->
+                <p class="text-2xl text-gray-600 mb-10 font-medium">
+                    Un proyecto universitario de comunicación que siembra un futuro más verde.
+                </p>
+                <!-- Botón de Acción -->
+                <a href="sobre.html" class="inline-block px-12 py-4 text-xl text-white font-bold rounded-full btn-primary shadow-lg">
+                    <span data-lucide="leaf" class="inline-block w-6 h-6 mr-2 -mt-1"></span>
+                    Haz la diferencia hoy
+                </a>
+            </div>
+        </section>
+
+        <!-- Bloque de Contenido Dinámico (Ejemplo) -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center max-w-5xl">
+                <h2 class="text-4xl text-gray-800 mb-12">Nuestros Pilares de Acción</h2>
+                <div class="grid md:grid-cols-3 gap-10">
+                    <!-- Pilar 1 -->
+                    <div class="bg-blue-50 p-6 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 border-2 border-blue-200">
+                        <span data-lucide="cloud-lightning" class="w-12 h-12 text-blue-500 mx-auto mb-4"></span>
+                        <h3 class="text-2xl font-semibold mb-3 text-blue-700">Creatividad Viral</h3>
+                        <p class="text-gray-600">Campañas de impacto que generan conciencia en redes y medios digitales.</p>
+                    </div>
+                    <!-- Pilar 2 -->
+                    <div class="bg-emerald-50 p-6 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 border-2 border-emerald-200">
+                        <span data-lucide="hand-heart" class="w-12 h-12 text-emerald-500 mx-auto mb-4"></span>
+                        <h3 class="text-2xl font-semibold mb-3 text-emerald-700">Acción Directa</h3>
+                        <p class="text-gray-600">Jornadas de siembra de árboles, limpieza de playas y reciclaje.</p>
+                    </div>
+                    <!-- Pilar 3 -->
+                    <div class="bg-yellow-50 p-6 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 border-2 border-yellow-200">
+                        <span data-lucide="message-square" class="w-12 h-12 text-yellow-500 mx-auto mb-4"></span>
+                        <h3 class="text-2xl font-semibold mb-3 text-yellow-700">Educación Continua</h3>
+                        <p class="text-gray-600">Creación de tutoriales y guías ambientales para la comunidad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex justify-between items-center flex-wrap gap-4">
+                <p class="text-sm">© 2025 El ecosistema nuestro hogar. Proyecto Universitario.</p>
+                <div class="flex space-x-4 text-2xl">
+                    <a href="#" class="hover:text-emerald-400 transition" aria-label="Instagram"><span data-lucide="instagram"></span></a>
+                    <a href="#" class="hover:text-emerald-400 transition" aria-label="Twitter"><span data-lucide="twitter"></span></a>
+                    <a href="#" class="hover:text-emerald-400 transition" aria-label="Facebook"><span data-lucide="facebook"></span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Inicializa Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

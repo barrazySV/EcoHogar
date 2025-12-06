@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre el Proyecto | El ecosistema nuestro hogar</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carga de Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Tipografía moderna (Inter) */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #374151; 
+        }
+        
+        /* Estilo para el botón con degradado dinámico */
+        .btn-primary {
+            background-image: linear-gradient(45deg, #10b981, #3b82f6);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+        }
+        .btn-primary:hover {
+            background-image: linear-gradient(45deg, #3b82f6, #10b981);
+            box-shadow: 0 8px 25px rgba(16, 185, 129, 0.6);
+            transform: translateY(-2px);
+        }
+
+        /* Degradado suave para secciones */
+        .gradient-section {
+            background-color: #ecfeff;
+            background-image: linear-gradient(135deg, #ecfeff 0%, #d1fae5 100%);
+        }
+
+        /* Estilo para títulos grandes y llamativos */
+        h1, h2 {
+            font-weight: 800; 
+        }
+    </style>
+</head>
+<body class="bg-white pt-20">
+    <!-- Header/Menú de Navegación -->
+    <header class="bg-white/95 backdrop-blur-sm shadow-md fixed w-full z-10 top-0">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-extrabold text-emerald-600 hover:text-blue-600 transition duration-300 rounded-lg p-1">
+                El ecosistema nuestro hogar
+            </a>
+            <!-- Links de Navegación -->
+            <div class="flex space-x-6 text-lg font-medium">
+                <a href="index.html" class="text-gray-700 hover:text-blue-600 transition pb-1">Inicio</a>
+                <a href="sobre.html" class="text-blue-600 border-b-2 border-blue-600 pb-1 transition">Sobre</a>
+                <a href="comunidad.html" class="text-gray-700 hover:text-blue-600 transition pb-1">Comunidad</a>
+                <a href="contacto.html" class="text-gray-700 hover:text-blue-600 transition pb-1">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección Título -->
+        <section class="gradient-section py-20 text-center">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h1 class="text-5xl text-gray-800 mb-4">Sobre **El ecosistema nuestro hogar**</h1>
+                <p class="text-xl text-gray-600">Comunicación con propósito para un impacto real en nuestro planeta.</p>
+            </div>
+        </section>
+
+        <!-- Sección 1: Qué es el proyecto -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center max-w-6xl">
+                <div>
+                    <span data-lucide="earth" class="w-12 h-12 text-emerald-500 mb-4"></span>
+                    <h2 class="text-4xl text-gray-800 mb-4">Una Campaña Nacida de la Comunicación</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        "El ecosistema nuestro hogar" es más que una iniciativa; es la aplicación práctica de los conocimientos de comunicación para resolver problemas reales. Nace de la necesidad de utilizar herramientas creativas y estratégicas (audiovisual, digital y social) para promover acciones concretas en pro del medio ambiente. Nuestro objetivo es transformar la teoría en acción.
+                    </p>
+                </div>
+                <!-- Placeholder visual -->
+                <div class="bg-emerald-100 p-8 rounded-3xl text-center shadow-lg">
+                    <span data-lucide="message-square-plus" class="w-16 h-16 text-emerald-600 mx-auto mb-3"></span>
+                    <p class="text-emerald-700 font-semibold">Estrategias que dejan huella, no solo contenido.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 2: Quiénes participan -->
+        <section class="py-16 gradient-section">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <h2 class="text-4xl text-gray-800 mb-10 text-center">Impulsado por Estudiantes de Comunicación</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-2xl shadow-xl border border-blue-100">
+                        <span data-lucide="users" class="w-10 h-10 text-blue-500 mb-3"></span>
+                        <h3 class="text-xl font-semibold mb-2 text-blue-700">Futuros Estrategas</h3>
+                        <p class="text-gray-600">Somos un equipo multidisciplinario de estudiantes de comunicación, periodismo y publicidad.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-xl border border-blue-100">
+                        <span data-lucide="zap" class="w-10 h-10 text-blue-500 mb-3"></span>
+                        <h3 class="text-xl font-semibold mb-2 text-blue-700">Energía e Innovación</h3>
+                        <p class="text-gray-600">Aportamos ideas frescas y metodologías de comunicación de última generación.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-xl border border-blue-100">
+                        <span data-lucide="university" class="w-10 h-10 text-blue-500 mb-3"></span>
+                        <h3 class="text-xl font-semibold mb-2 text-blue-700">Apoyo Académico</h3>
+                        <p class="text-gray-600">Contamos con la guía de profesores expertos en sostenibilidad y responsabilidad social.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 3: Contenido que producimos -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <h2 class="text-4xl text-gray-800 mb-10 text-center">Proyectos: Manos a la Obra</h2>
+                <div class="flex flex-col md:flex-row items-stretch gap-8">
+                    <div class="flex-1 bg-emerald-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
+                        <span data-lucide="trees" class="w-10 h-10 text-emerald-600 mb-3"></span>
+                        <h3 class="text-2xl font-semibold mb-2 text-emerald-700">Reverdecer la Ciudad</h3>
+                        <p class="text-gray-600">Organización y documentación de jornadas de siembra de árboles en áreas urbanas.</p>
+                    </div>
+                    <div class="flex-1 bg-blue-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
+                        <span data-lucide="droplets" class="w-10 h-10 text-blue-600 mb-3"></span>
+                        <h3 class="text-2xl font-semibold mb-2 text-blue-700">Guardianes del Agua</h3>
+                        <p class="text-gray-600">Limpieza de playas, ríos o cuencas, con cobertura periodística y contenido educativo asociado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex justify-between items-center flex-wrap gap-4">
+                <p class="text-sm">© 2025 El ecosistema nuestro hogar. Proyecto Universitario.</p>
+                <div class="flex space-x-4 text-2xl">
+                    <a href="#" class="hover:text-emerald-400 transition" aria-label="Instagram"><span data-lucide="instagram"></span></a>
+                    <a href="#" class="hover:text-emerald-400 transition" aria-label="Twitter"><span data-lucide="twitter"></span></a>
+                    <a href="#" class="hover:text-emerald-400 transition" aria-label="Facebook"><span data-lucide="facebook"></span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Inicializa Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
